@@ -1,0 +1,97 @@
+
+<ion-header class="hm_bg_color hm_header">
+  <div class="hm_header_location_bay">
+    Banarsi Das Estate, Delhi
+    <span><img src="assets/img/hm_dwn_arw.png"></span>
+  </div>
+  <button ion-button class="hm_header_btn hm_float_right hm_search_icon" (click)="location()" ></button>
+  <div class="hm_clear"></div>
+</ion-header>
+<ion-content class="hm_sign_bg">
+  <div class="hm_wrapper">
+  <div class="hm_search_bay">
+    <input class="hm_search_input" placeholder="Search for a service">
+  </div>
+  <div class="hm_menu_bay">
+    <ul>
+      <li class="hm_border_top_none hm_border_left_none" (click)="service(0)"><img src="assets/img/hm_item1.png"><p>Beauty</p></li>
+      <li class="hm_border_top_none hm_border_left_none" (click)="service(1)"><img src="assets/img/hm_item2.png"><p>Health</p></li>
+      <li class="hm_border_top_none hm_border_left_none" (click)="service(2)"><img src="assets/img/hm_item3.png"><p>Lessons</p></li>
+      <li class="hm_border_top_none hm_border_left_none hm_border_right_none" (click)="service(3)"><img src="assets/img/hm_item4.png"><p>Home Service</p></li>
+      <li class="hm_border_bottom_none hm_border_left_none" (click)="service(4)"><img src="assets/img/hm_item5.png"><p>Business</p></li>
+      <li class="hm_border_bottom_none hm_border_left_none" (click)="service(5)"><img src="assets/img/hm_item6.png"><p>Events</p></li>
+      <li class="hm_border_bottom_none hm_border_left_none" (click)="service(6)"><img src="assets/img/hm_item7.png"><p>Hobbies</p></li>
+      <li class="hm_border_bottom_none hm_border_left_none hm_border_right_none" (click)="service(7)"><img src="assets/img/hm_item8.png"><p>Repairs</p></li>
+      <div class="hm_clear"></div>
+    </ul>
+  </div>
+  <div class="hm_ad_wrap">
+  <ion-slides pager="false" #mySlider>
+        <ion-slide (click)="recommended()">
+			<img src="assets/img/hm_shop_banner.png">
+		</ion-slide>
+		<ion-slide (click)="recommended()">
+			<img src="assets/img/hm_shop_banner.png">
+		</ion-slide>
+	</ion-slides>
+  </div>
+  <div class="hm_catagory_scroll_div">
+    <h5 (click)="fitness()">For the Fitness</h5>
+    <ion-scroll scrollX="true" style="height:130px;">
+      <ul>
+        <li>
+          <div class="hm_catagory_item">
+            <img src="assets/img/hm_a1.png">
+          </div>
+          <p>Diet Plan</p>
+        </li>
+        <li>
+          <div class="hm_catagory_item">
+            <img src="assets/img/hm_a2.png">
+          </div>
+          <p>Streching</p>
+        </li>
+        <li>
+          <div class="hm_catagory_item">
+            <img src="assets/img/hm_a3.png">
+          </div>
+          <p>Muscle Gain</p>
+        </li>
+        <li>
+          <div class="hm_catagory_item">
+            <img src="assets/img/hm_a4.png">
+          </div>
+          <p>Lean stress</p>
+        </li>
+        <li>
+          <div class="hm_catagory_item">
+            <img src="assets/img/hm_a1.png">
+          </div>
+          <p>Diet Plan</p>
+        </li>
+        <li>
+          <div class="hm_catagory_item">
+            <img src="assets/img/hm_a2.png">
+          </div>
+          <p>Diet Plan</p>
+        </li>
+        <li>
+          <div class="hm_catagory_item">
+            <img src="assets/img/hm_a3.png">
+          </div>
+          <p>Diet Plan</p>
+        </li>
+        <li>
+          <div class="hm_catagory_item">
+            <img src="assets/img/hm_a4.png">
+          </div>
+          <p>Diet Plan</p>
+        </li>
+      </ul>
+    </ion-scroll>
+  </div>
+</div>
+</ion-content>
+<ion-footer>
+<tabcomponent></tabcomponent>
+</ion-footer>

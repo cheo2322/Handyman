@@ -1,0 +1,8 @@
+{
+  "name": "handyman",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "ef60560b"
+}
