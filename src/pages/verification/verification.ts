@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController,ViewController,NavParams } from 'ionic-angular';
 
 @IonicPage()
