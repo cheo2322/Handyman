@@ -1,7 +1,8 @@
+<script src="moment.js"></script>
 
 <ion-content class="hm_sign_bg">
   <div class="hm_wrapper">
-    <button ion-button class="hm_back_btn hm_button" (click)="dismiss()"></button>
+    <button ion-button class="hm_back_btn hm_button" (click)="back()"></button>
     <div class="hm_signin_inner_wrapper">
       <br>
       <h3>Código de verificación</h3>
@@ -68,13 +69,13 @@
             </select>
           </li>
         </ul>
-        <h4>2:00</h4>
+        <h4> {{timer}} </h4>
       </div>
     </div>
     <div class="hm_slide_btm_bay" (click)="home()">
-         <button ion-button class="hm_btm_btn">
-           <img src="assets/img/hm_round_arw_blck.png">
-         </button>
+      <button ion-button class="hm_btm_btn">
+        <img src="assets/img/hm_round_arw_blck.png">
+      </button>
     </div>
   </div>
 </ion-content>
