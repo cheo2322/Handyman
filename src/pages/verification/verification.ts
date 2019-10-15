@@ -13,8 +13,11 @@ export class Verification {
   public timer = '02:00';
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController,
     public alertCtrl: AlertController) {
-    //this.startTimer();
-    var newDateObj = moment().add(3, 's');
+    this.startTimer();
+  }
+
+  startTimer() {
+    var newDateObj = moment().add(121, 's');
     this.countdown(newDateObj);
   }
 
