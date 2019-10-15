@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import {Validator} from "validator.ts/Validator";
-import {Contains, IsInt, IsLength, IsEmail, IsFQDN, IsDate} from "validator.ts/decorator/Validation";
+import { Validator } from "validator.ts/Validator";
+import { Contains, IsInt, IsLength, IsEmail, IsFQDN, IsDate } from "validator.ts/decorator/Validation";
 
 @IonicPage()
 @Component({
@@ -14,12 +14,12 @@ export class Signin {
   items: Array<{ title: string, note: string, icon: string }>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+    
   }
 
   validatePhone() {
     var number = (document.getElementById('phone') as HTMLInputElement).value,
-      regex1 = /^([0-9]+){9}$/,
+     regex1 = /^([0-9]+){9}$/,
       regex2 = /\s/;
 
     if (number == '')
@@ -28,11 +28,15 @@ export class Signin {
       alert('Número incorrecto');
     else if (!regex1.test(number))
       alert('Número incompleto');
-    else
-      this.signup();
+    else {
+      let data = {
+        n: number,
+      };
+      this.signup(data);
+    }
   }
 
-  signup() {
-    this.navCtrl.push('Signup');
+  signup(data) {
+    this.navCtrl.push('Signup', data);
   }
 }
